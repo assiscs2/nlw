@@ -1,0 +1,42 @@
+
+#created-class {
+    background: var(--color-primary);
+    align-content: center;
+    color: var(--color-title-in-primary);
+    align-self: center;
+
+}
+
+#created-class main p {
+    color: var(--color-text-complement);
+    font-size: 1.6rem;
+}
+
+#created-class footer .access-study {
+    width: 100%;
+    max-width: 240px;
+    height: 5.6rem;
+    border-radius: 0.8rem;
+    color: var(--color-button-text);
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border: 0;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    margin-top: 3.2rem;
+    align-self: baseline;
+
+}
+
+#created-class footer .access-study:hover {
+    transition: 0.2s;
+    background-color: var(-color-secondary-dark);
+
+
+}
