@@ -13,7 +13,7 @@ async function pageStudy(req, res) {
     const filters = req.query
 
     if (!filters.subject || !filters.weekday || !filters.time) {
-        return res.render(__dirname + "/views/study.html", { filters, subjects, weekdays })
+         return res.render(__dirname + "/views/study.html", { filters, subjects, weekdays })
     }
 
     //   console.log('não tem campos vazios')
@@ -89,8 +89,8 @@ async function saveClasses(req, res) {
         queryString += "&weekday=" + req.body.weekday[0]
         queryString += "&time=" + req.body.time_from[0]
 
-
-        return res.redirect("/study" + queryString)
+        return res.redirect("/created-success" + queryString)
+        
     } catch (error) {
         console.log(error)
     }

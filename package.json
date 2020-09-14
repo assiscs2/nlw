@@ -13,8 +13,8 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-  
   "publishConfig": { 
     "registry": "https://npm.pkg.github.com/" 
-  }  
+  }
+
 }
