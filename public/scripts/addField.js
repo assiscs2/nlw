@@ -22,11 +22,21 @@ function cloneField() {
         const newFieldsContainer = document.querySelector('.schedule-item').cloneNode(true) // boolean- true or false
         //limpar os campos. Que campos??
         const fields = newFieldsContainer.querySelectorAll('input')
+
         //Para cada campo, limpar.
         fields.forEach(function (field) {
+            console.log(field.value)
+            // Verificar se os campos estão vazios
+            if (field.value == ""){
+                return
+            } else {
             //Pega o field do momento e limpa ele
-            field.value = ""     
-        });   
-//Colocar na página, onde??
-document.querySelector('#schedule-items').appendChild(newFieldsContainer)          
+            field.value = ""  
+                //Colocar na página, onde??
+            document.querySelector('#schedule-items').appendChild(newFieldsContainer)    
+            }   
+        }); 
+  
+
+      
     }
